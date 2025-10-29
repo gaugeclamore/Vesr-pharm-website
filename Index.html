@@ -1,67 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <header class="site-header">
-    <h1>My Website</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Gauge Clamore</a></li>
-            <li><a href="#">10/25/2025</a></li>
-            <li><a href="#">VESR/Industry Website</a></li>
-        </ul>
-    </nav>
-</header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Values</title>
-    <div class="fixed-image">
-            <img src="https://thumbs.dreamstime.com/b/values-beliefs-origins-personal-81651093.jpg" alt="Image">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #b53e3e;  
-            margin: 2;
-            padding: 20px }
-        h1 {   color: #000000; }
-        ul { list-style-type: square; }
-        li { margin: 10px 0;  }
+            font-family: 'Roboto', sans-serif;
+            color: #f0f0f0;
+            background: linear-gradient(135deg, #0b0c10, #1f2833);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header.site-header {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header.site-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #66fcf1;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #c5c6c7;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .fixed-image {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .fixed-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            filter: grayscale(30%);
+        }
+
+        /* Main Section */
+        main {
+            padding: 60px 10%;
+        }
+
+        main h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #66fcf1;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        ul.values-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            list-style: none;
+        }
+
+        ul.values-list li {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+
+        /* Navigation Box (Home / Pharmacy) */
+        .page-links {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #66fcf1;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .page-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #c5c6c7;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .page-links a:hover {
+            text-decoration: underline;
+        }
+
+        section.value-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #66fcf1;
+        }
+
+        section.value-card h3 {
+            color: #66fcf1;
+            margin-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        section.value-card p {
+            color: #c5c6c7;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #c5c6c7;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
     </style>
-<head>
+</head>
+
 <body>
-    <Header>
-        <h1>My Personal Values</h1>
+    <header class="site-header">
+        <h1>My Website</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="cyber.html">About Me</a> |
-        </nav>  
-    </Header>  
+            <ul>
+                <li><a href="#">Gauge Clamore</a></li>
+                <li><a href="#">10/25/2025</a></li>
+                <li><a href="#">VESR/Industry Website</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fixed-image">
+        <img src="https://thumbs.dreamstime.com/b/values-beliefs-origins-personal-81651093.jpg" alt="Image">
+    </div>
+
     <main>
-     <h2>What are my personal values?</h2>
-        <li>Integrity</li>
+        <h2>What are my personal values?</h2>
+        <ul class="values-list">
+            <li>Integrity</li>
             <li>Respect</li>
             <li>Empathy</li>
             <li>Growth</li>
             <li>Community</li>
-                <h3>integrity </h3>
-                    <p>You earn trust, make good decisions, and feel confident in doing what's right. You form integrity by consistently being honest, keeping your promises, and standing by your principles even when it's difficult.</p
-            <h3>Respect</h3>
-                    <p>You treat others with kindness, consideration, and appreciation. You show respect by listening to others, valuing their opinions, and acknowledging their feelings and rights.</p>
+        </ul>
 
-            
-            <h4>Empathy</h4>
-                    <p>You understand and share the feelings of others. You practice empathy by putting yourself in someone else's shoes, being compassionate, and offering support when needed.</p>
-            
-            
-             <h3>Growth</h3>
-                    <p>You strive to improve yourself and your abilities. You embrace growth by seeking new experiences, learning from your mistakes, and being open to feedback.</p>
-              
-            
-                <h3>Community</h3>
-                    <p>You value being part of a group and contributing to the well-being of others. You foster community by participating in group activities, helping those in need, and building strong relationships.</p>
-            
-    </main>   
+        <!-- Boxed Navigation Links -->
+        <div class="page-links">
+            <a href="Index.html">Home</a>
+            <a href="Pharm.html">Pharmacy</a>
+        </div>
+
+        <section class="value-card">
+            <h3>Integrity</h3>
+            <p>You earn trust, make good decisions, and feel confident in doing what's right. You form integrity by consistently being honest, keeping your promises, and standing by your principles even when it's difficult.</p>
+        </section>
+
+        <section class="value-card">
+            <h3>Respect</h3>
+            <p>You treat others with kindness, consideration, and appreciation. You show respect by listening to others, valuing their opinions, and acknowledging their feelings and rights.</p>
+        </section>
+
+        <section class="value-card">
+            <h3>Empathy</h3>
+            <p>You understand and share the feelings of others. You practice empathy by putting yourself in someone else's shoes, being compassionate, and offering support when needed.</p>
+        </section>
+
+        <section class="value-card">
+            <h3>Growth</h3>
+            <p>You strive to improve yourself and your abilities. You embrace growth by seeking new experiences, learning from your mistakes, and being open to feedback.</p>
+        </section>
+
+        <section class="value-card">
+            <h3>Community</h3>
+            <p>You value being part of a group and contributing to the well-being of others. You foster community by participating in group activities, helping those in need, and building strong relationships.</p>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 My Personal Values</p>
-    </footer> 
+    </footer>
 </body>
 </html>
